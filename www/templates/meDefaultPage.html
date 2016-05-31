@@ -1,0 +1,20 @@
+<ion-view title="My Profile" id="page4" cache-view="false" ng-init="load()">
+    <ion-content padding="true" class="has-header">
+        <h2 id="meDefaultPage-heading1" style="color:#000000;text-align:center;">{{userinfo.name}}'s Profile</h2>
+        <ion-list>
+            <ion-item>Gender {{userinfo.gender}}</ion-item>
+            <ion-item>No. {{userinfo.phonenumber}}</ion-item>
+            <ion-item>Company {{userinfo.company}}</ion-item>
+            <ion-item class="item-divider">Edit Profile</ion-item>
+            <ion-item><button class="button button-balanced  button-block" ng-click="gotoEditProfile()">Edit Profile</button></ion-item>
+
+            <ion-item class="item-divider">Change Password</ion-item>
+            <ion-item><button class="button button-balanced  button-block" ng-click="gotoResetPassword()">Reset Password</button></ion-item>
+
+            <ion-item class="item-divider">Log out</ion-item>
+            <ion-item><button class="button button-assertive  button-block" ng-click="logout()">log out</button></ion-item>
+        </ion-list>
+
+
+    </ion-content>
+</ion-view>
